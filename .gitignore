@@ -1,0 +1,20 @@
+# AI assistant briefing, kept local
+CLAUDE.md
+.claude/
+
+# Vivado / simulation outputs
+*.jou
+*.log
+*.str
+.Xil/
+*.cache/
+*.runs/
+*.hw/
+*.ip_user_files/
+*.sim/
+obj_dir/
+sim_build/
+__pycache__/
+results.xml
+*.vcd
+*.fst

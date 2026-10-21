@@ -1,0 +1,22 @@
+create_clock -period 20.000 -name clk [get_ports clk]
+set_output_delay -clock clk 0.10  [get_ports TMDS_CLK_P2]
+set_output_delay -clock clk 0.10 [get_ports TMDS_CLK_N2]
+
+set_output_delay -clock clk 0.10  [get_ports TMDS_CLK_P1]
+set_output_delay -clock clk 0.10 [get_ports TMDS_CLK_N1]
+
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports HDMI_OUT_EN1]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+set_property PACKAGE_PIN D26 [get_ports rst_n]
+set_property PACKAGE_PIN G22 [get_ports clk]
+set_property PACKAGE_PIN E22 [get_ports HDMI_OUT_EN1]
+
+set_property PACKAGE_PIN F17 [get_ports TMDS_CLK_P1]
+set_property PACKAGE_PIN J15 [get_ports {TMDS_DATA_P1[0]}]
+set_property PACKAGE_PIN E15 [get_ports {TMDS_DATA_P1[1]}]
+set_property PACKAGE_PIN G17 [get_ports {TMDS_DATA_P1[2]}]
+set_property PACKAGE_PIN E18 [get_ports TMDS_CLK_P2]
+set_property PACKAGE_PIN D19 [get_ports {TMDS_DATA_P2[0]}]
+set_property PACKAGE_PIN H17 [get_ports {TMDS_DATA_P2[1]}]
+set_property PACKAGE_PIN G19 [get_ports {TMDS_DATA_P2[2]}]
